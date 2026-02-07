@@ -16761,39 +16761,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.dsi.ant@1.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "com.dsi.ant@1.0",
-                "android.hardware.bluetooth@1.0",
-                "android.hardware.bluetooth@1.0-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "fingerprint.goodix",
     owner: "xiaomi",
     strip: {
@@ -22527,34 +22494,6 @@ prebuilt_rfsa {
     src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.ant@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {

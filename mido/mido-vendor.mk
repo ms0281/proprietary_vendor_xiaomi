@@ -735,7 +735,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModule \
     android.hardware.bluetooth@1.0-impl-qti \
-    com.dsi.ant@1.0-impl \
     fingerprint.goodix \
     fingerprint.searchf \
     gatekeeper.msm8953 \
@@ -928,7 +927,6 @@ PRODUCT_PACKAGES += \
     libfastcvadsp_skel \
     libscveObjectSegmentation_skel \
     libscveT2T_skel \
-    com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
